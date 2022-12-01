@@ -9,8 +9,22 @@
     */
 
     //Entrada
+    let notaMenor5 = [];
+    let notaMaior5 = [];
+    let soma = 0
+for (let contador = 1; contador <= 15; contador++) {
+const nota = Number(prompt(`qual a nota (de 1 a 10) o cidadao ${contador}`))
+    if (nota >= 5) {
+        notaMaior5.push(nota)
+        soma = soma + nota
+    }else{notaMenor5.push(nota)
+    soma = soma + nota}
+}
 
 
+
+ const mediaNota = soma/15
+document.write(`${notaMenor5.length} deram nota inferior a 5, a media das notas é ${mediaNota.toFixed(2)}`)
     //Processamento
 
 

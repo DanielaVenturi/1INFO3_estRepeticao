@@ -8,10 +8,34 @@
     */
 
     //Entrada
+let chapa1 = [];
+let chapa2 = [];
 
+
+for (let contador = 1; contador <= 14; contador++) {
+    const chapa = Number(prompt(`qual a chapa o representante ${contador} vai votar? chapa1(1) ou chapa 2(2).`))
+    if (chapa === 1) {
+        chapa1.push(chapa)
+    }else{
+        chapa2.push(chapa)
+    }
+}
+
+const unidadeC1 = chapa1.length
+const unidadeC2 = chapa2.length
+
+const porcentagemChapa1 = (unidadeC1*100)/14
+const porcentagemChapa2 = (unidadeC2*100)/14
+
+
+if (unidadeC1 > unidadeC2) {
+    document.write(`a chapa 1 ganhou com ${porcentagemChapa1.toFixed(2)}% de votos`)
+}else{
+    document.write(`a chapa 2 ganhou com ${porcentagemChapa2.toFixed(2)}% de votos`)
+}
 
     //Processamento
-
+//essa foi mto chata de fazer, mas a mae é mto programadora 
 
     //Saída
 

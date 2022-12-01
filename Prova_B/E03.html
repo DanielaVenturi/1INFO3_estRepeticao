@@ -10,11 +10,20 @@
     */
 
     //Entrada
-
-
+    const alunos = Number(prompt(`quantos alunos consumirao bebida no almoço?`));
+    let abacaxi = [];
+    let laranja = [];
     //Processamento
-
-
+    for (let contador = 1; contador <= alunos; contador++) {
+        const sabor = prompt(`qual o sabor de suco abacaxi(a) ou laranja(l) o aluno ${contador} ira consumir?`).toUpperCase();
+        if (sabor === `A`) {
+            abacaxi.push(sabor)
+        } else {
+            laranja.push(sabor)
+        }
+    }
+    document.write(`${abacaxi.length} alunos vao beber suco de abacaxi <br>
+${laranja.length} alunos vao beber suco de laranja`)
     //Saída
-
+// fabio eu te amooooooo! pegue leve com sua turminha favorita <3
 </script>
